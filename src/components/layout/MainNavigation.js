@@ -1,0 +1,26 @@
+import { Link } from 'react-router-dom';
+
+import Classes from './MainNavigation.module.css';
+
+function MainNvigation() {
+    return (
+    <header className={Classes.header}>
+        <div className={Classes.logo}>React Meetups</div>
+        <nav>
+            <ul>
+                <li>
+                    <Link to='/'>All Meetups</Link>
+                </li>
+                <li>
+                    <Link to='/new-meetup'>New Meetups</Link>
+                </li>
+                <li>
+                    <Link to='/favorites'>My Favorites</Link>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    );
+}
+
+export default MainNvigation;
